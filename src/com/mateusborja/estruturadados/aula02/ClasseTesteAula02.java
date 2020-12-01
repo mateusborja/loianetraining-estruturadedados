@@ -6,7 +6,7 @@
 
 package com.mateusborja.estruturadados.aula02;
 
-public class ClasseTeste {
+public class ClasseTesteAula02 {
 	
 	public static void main(String[] args) {
 		
