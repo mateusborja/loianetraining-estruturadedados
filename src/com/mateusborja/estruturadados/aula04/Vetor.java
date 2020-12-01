@@ -77,7 +77,7 @@ public class Vetor {
 	}
 
 	//impressao utilizando Classe Arrays
-	public String imprimirVetoresAll() {
+	public String imprimirVetoresAll() { 
 		return Arrays.toString(elementos);
 	}
 
