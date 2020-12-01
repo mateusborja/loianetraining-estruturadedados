@@ -59,7 +59,7 @@ public class Vetor {
 		return this.tamanho;
 	}
 
-	// utilizando contatenacao - apenas o tamanho
+	// impressao utilizando contatenacao - apenas o tamanho
 	public String imprimirVetores() {
 
 		String s = "[";
@@ -76,6 +76,7 @@ public class Vetor {
 		return s;
 	}
 
+	//impressao utilizando Classe Arrays
 	public String imprimirVetoresAll() {
 		return Arrays.toString(elementos);
 	}
@@ -90,6 +91,7 @@ public class Vetor {
 			s.append(", ");
 
 		}
+		//cond para vetor existir
 		if (this.tamanho > 0) {
 			s.append(this.elementos[this.tamanho - 1]);
 		}
