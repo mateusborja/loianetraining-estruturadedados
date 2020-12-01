@@ -3,7 +3,8 @@
  * @author Mateus Borja // UX Designer • 3D Artist • Developer
  * at www.mateusborja.life
  */
-//aula 4 tamanho do vetor
+//aula 4 tamanho do vetor 
+//imprimindo vetor com a Classe StringBuilder e metodos
 package com.mateusborja.estruturadados.aula04;
 
 import java.util.Arrays;
@@ -19,6 +20,7 @@ public class Vetor {
 
 	}
 
+	//opcao 1 - metodo com iteracao e checar se existem nulls(posicao vazia)
 	public void adicionarOpcaoUm(String elemento) {
 		for (int i = 0; i < this.elementos.length; i++) {
 			if (elementos[i] == null) {
@@ -31,12 +33,22 @@ public class Vetor {
 
 	}
 
+	//opcao 2 - metodo com cond p checar tamanho
 	public void adicionarOpcaoDois(String elemento) {
 		if (tamanho < elementos.length) {
 			this.elementos[this.tamanho] = elemento;
 			tamanho++;
 
 		}
+	}
+	//opcao 3 - metodo boleano
+	public boolean adicionarOpcaoTres(String elemento) {
+		if(tamanho < this.elementos.length) {
+			this.elementos[this.tamanho] = elemento;
+			tamanho++;
+			return true;
+		}
+		return false;
 	}
 
 	public int getTamanho() {
