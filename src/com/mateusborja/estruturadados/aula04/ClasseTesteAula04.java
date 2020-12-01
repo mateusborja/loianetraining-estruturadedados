@@ -14,6 +14,7 @@ public class ClasseTesteAula04 {
 		vetor.adicionarOpcaoUm("elemento1");
 		vetor.adicionarOpcaoDois("elemento2");
 		vetor.adicionarOpcaoDois("elemento3");
+		vetor.adicionarOpcaoTres("elemento4");
 		
 		System.out.println(vetor.tamanho());
 		
