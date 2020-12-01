@@ -7,20 +7,14 @@
 package com.mateusborja.estruturadados.aula03;
 
 public class ClasseTesteAula03 {
-	
+
 	public static void main(String[] args) {
-		
+
 		Vetor vetor = new Vetor(5);
 		vetor.adicionarOpcaoUm("elemento1");
 		vetor.adicionarOpcaoUm("elemento2");
 		vetor.adicionarOpcaoDois("elemento3");
-		
-	
-		
-	
-		
-		
-		
+
 	}
 
 }
