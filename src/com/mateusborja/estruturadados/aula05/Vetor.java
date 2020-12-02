@@ -102,17 +102,27 @@ public class Vetor {
 		return s.toString();
 	}
 
-	// metodo de busca sem excepetion e cond posicoes existentes
+	// metodo que busca um elemento em umarray sem excepetion e cond posicoes existentes
 	public String buscarVetor(int posicao) {
 		return this.elementos[posicao];
 	}
 
-	// metodo de busca com excepetion e cond posicoes existentes
+	// metodo que busca um elemento no array com excepetion e cond posicoes existentes
 	public String buscaVetorApr(int posicao) {
-		if (posicao > 0 && posicao < this.tamanho) {
+		if (!(posicao > 0 && posicao < this.tamanho)) {
 			throw new IllegalArgumentException("Posição inválida!");
 		}
 		return this.elementos[posicao];
+	}
+
+	// verificar existencia de um elemento em um array
+	public String buscarVetorExistente(String elemento) {
+		for (int i = 0; i < this.tamanho; i++) {
+			if (this.elementos[i].equalsIgnoreCase(elemento)) {
+				return "Posição: [" + i + "]";
+			}
+		}
+		return "Elemento inexistente";
 	}
 
 }
