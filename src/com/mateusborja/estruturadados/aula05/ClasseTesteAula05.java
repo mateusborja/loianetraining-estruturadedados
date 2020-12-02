@@ -3,7 +3,7 @@
  * @author Mateus Borja // UX Designer • 3D Artist • Developer
  * at www.mateusborja.life
  */
-//aula 05 estr dados - obtendo elemento de um vetor - classe teste
+//aula 05 estr dados - obtendo um elemento de um vetor - classe teste
 package com.mateusborja.estruturadados.aula05;
 
 public class ClasseTesteAula05 {
@@ -11,14 +11,18 @@ public class ClasseTesteAula05 {
 	public static void main(String[] args) {
 		
 		
-		Vetor arr = new Vetor(4);
+		Vetor arr = new Vetor(5);
 		
-		arr.adicionarOpcaoUm("elemento1");
-		arr.adicionarOpcaoUm("elemento2");
-		arr.adicionarOpcaoUm("elemento3");
+		arr.adicionarOpcaoUm("itn");
+		arr.adicionarOpcaoUm("java");
+		arr.adicionarOpcaoUm("mateus");
+		arr.adicionarOpcaoUm("teste");
 		
 		System.out.println(arr.buscarVetor(3));
-		System.out.println(arr.buscaVetorApr(4)); // metodo aprimorado lancando exception
+		System.out.println(arr.buscaVetorApr(1)); // metodo aprimorado lancando exception
+		System.out.println("Tamanho do Array: " + arr.tamanho());
+		
+		System.out.println(arr.buscarVetorExistente("itn"));
 		
 		
 		
