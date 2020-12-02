@@ -20,7 +20,7 @@ public class Vetor {
 
 	}
 
-	//opcao 1 - metodo com iteracao e checar se existem nulls(posicao vazia)
+	// opcao 1 - metodo com iteracao e checar se existem nulls(posicao vazia)
 	public void adicionarOpcaoUm(String elemento) {
 		for (int i = 0; i < this.elementos.length; i++) {
 			if (elementos[i] == null) {
@@ -33,7 +33,7 @@ public class Vetor {
 
 	}
 
-	//opcao 2 - metodo com cond p checar tamanho
+	// opcao 2 - metodo com cond p checar tamanho
 	public void adicionarOpcaoDois(String elemento) {
 		if (tamanho < elementos.length) {
 			this.elementos[this.tamanho] = elemento;
@@ -41,9 +41,10 @@ public class Vetor {
 
 		}
 	}
-	//opcao 3 - metodo boleano
+
+	// opcao 3 - metodo boleano
 	public boolean adicionarOpcaoTres(String elemento) {
-		if(tamanho < this.elementos.length) {
+		if (tamanho < this.elementos.length) {
 			this.elementos[this.tamanho] = elemento;
 			tamanho++;
 			return true;
@@ -76,8 +77,8 @@ public class Vetor {
 		return s;
 	}
 
-	//impressao utilizando Classe Arrays
-	public String imprimirVetoresAll() { 
+	// impressao utilizando Classe Arrays
+	public String imprimirVetoresAll() {
 		return Arrays.toString(elementos);
 	}
 
@@ -91,7 +92,7 @@ public class Vetor {
 			s.append(", ");
 
 		}
-		//cond para vetor existir
+		// cond para vetor existir
 		if (this.tamanho > 0) {
 			s.append(this.elementos[this.tamanho - 1]);
 		}
