@@ -17,9 +17,13 @@ public class ClasseTesteAula06 {
 		arr.adicionarOpcaoUm("java");
 		arr.adicionarOpcaoUm("mateus");
 		arr.adicionarOpcaoUm("teste");
+		arr.adicionarOpcaoTres("teste");
 		
 		System.out.println(arr.buscarVetorInt("nice"));
 		System.out.println(arr.buscarVetorStr("nice"));
+		System.out.println(arr.buscarVetor(2));
+		
+		
 		
 		
 		
