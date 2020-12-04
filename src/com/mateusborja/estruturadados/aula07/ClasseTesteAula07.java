@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2020.  | All rights reserved
- * @author Mateus Borja // UX Designer • 3D Artist • Developer
+ * @author Mateus Borja // UX Designer ï¿½ 3D Artist ï¿½ Developer
  * at www.mateusborja.life
  */
 //aula 07 classe teste
@@ -26,6 +26,9 @@ public class ClasseTesteAula07 {
 		vetor.adicionarVetorQlqrPos(3, "D");
 		System.out.println(vetor);
 
+		vetor.adicionarVetorQlqrPos(7, "H");
+		System.out.println(vetor);
+		
 	}
 
 }
