@@ -17,6 +17,8 @@ public class ClasseTesteAula02 {
 		
 		int i = 0;
 		i++;
+		
+		System.out.println(i);
 
 		
 		
