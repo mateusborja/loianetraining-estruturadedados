@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2020.  | All rights reserved
- * @author Mateus Borja // UX Designer • 3D Artist • Developer
+ * @author Mateus Borja // UX Designer ï¿½ 3D Artist ï¿½ Developer
  * at www.mateusborja.life
  */
 //aula 5 obter elementos de um vetor
@@ -20,7 +20,7 @@ public class Vetor {
 
 	}
 
-	// opcao 1 - metodo com iteracao e checar se existem nulls(posicao vazia)
+	// opcao 1 - iteracao e checar se existem nulls
 	public void adicionarOpcaoUm(String elemento) {
 		for (int i = 0; i < this.elementos.length; i++) {
 			if (elementos[i] == null) {
@@ -33,7 +33,7 @@ public class Vetor {
 
 	}
 
-	// opcao 2 - metodo com cond p checar tamanho
+	// opcao 2 - cond p checar tamanho
 	public void adicionarOpcaoDois(String elemento) {
 		if (tamanho < elementos.length) {
 			this.elementos[this.tamanho] = elemento;
@@ -60,7 +60,7 @@ public class Vetor {
 		return this.tamanho;
 	}
 
-	// impressao utilizando contatenacao - apenas o tamanho
+	// impressao com contatenacao
 	public String imprimirVetores() {
 
 		String s = "[";
@@ -102,24 +102,24 @@ public class Vetor {
 		return s.toString();
 	}
 
-	// metodo que busca um elemento em umarray sem excepetion e cond posicoes existentes
+	// busca um elemento no array - string
 	public String buscarVetor(int posicao) {
 		return this.elementos[posicao];
 	}
 
-	// metodo que busca um elemento no array com excepetion e cond posicoes existentes
+	// busca um elemento no array - string
 	public String buscaVetorApr(int posicao) {
 		if (!(posicao > 0 && posicao < this.tamanho)) {
-			throw new IllegalArgumentException("Posição inválida!");
+			throw new IllegalArgumentException("PosiÃ§Ã£o invÃ¡lida!");
 		}
 		return this.elementos[posicao];
 	}
 
-	// verificar existencia de um elemento em um array
+	// verificar existencia elemento no array
 	public String buscarVetorExistente(String elemento) {
 		for (int i = 0; i < this.tamanho; i++) {
 			if (this.elementos[i].equalsIgnoreCase(elemento)) {
-				return "Posição: [" + i + "]";
+				return "PosiÃ§Ã£o: [" + i + "]";
 			}
 		}
 		return "Elemento inexistente";
