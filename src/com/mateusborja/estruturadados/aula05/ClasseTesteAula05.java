@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2020.  | All rights reserved
- * @author Mateus Borja // UX Designer • 3D Artist • Developer
+ * @author Mateus Borja // UX Designer ï¿½ 3D Artist ï¿½ Developer
  * at www.mateusborja.life
  */
 //aula 05 estr dados - obtendo um elemento de um vetor - classe teste
@@ -22,7 +22,6 @@ public class ClasseTesteAula05 {
 		System.out.println(arr.buscaVetorApr(1)); // metodo aprimorado lancando exception
 		System.out.println("Tamanho do Array: " + arr.tamanho());
 		
-		System.out.println(arr.buscarVetorExistente("itn"));
 		
 		
 		
