@@ -115,14 +115,4 @@ public class Vetor {
 		return this.elementos[posicao];
 	}
 
-	// verificar existencia elemento no array
-	public String buscarVetorExistente(String elemento) {
-		for (int i = 0; i < this.tamanho; i++) {
-			if (this.elementos[i].equalsIgnoreCase(elemento)) {
-				return "Posição: [" + i + "]";
-			}
-		}
-		return "Elemento inexistente";
-	}
-
 }
