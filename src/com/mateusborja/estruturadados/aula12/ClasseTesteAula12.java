@@ -42,7 +42,9 @@ public class ClasseTesteAula12 {
 
 		System.out.println("Indice 0: " + arrayList.get(0)); // metodo de busca get(Indice);
 		System.out.println(arrayList);
-		
+
+		arrayList.set(0, "mateusborja");
+		System.out.println(arrayList);
 
 	}
 
