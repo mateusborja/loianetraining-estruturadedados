@@ -216,7 +216,7 @@ public class Lista<T> { // simbologia de Tipo no Generics
 			return false;
 		if (tamanho != other.tamanho)
 			return false;
-		return true;
+		return true; 
 	}
 
 }
